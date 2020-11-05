@@ -15,7 +15,9 @@ html {
    margin: 0 !important;
 }
 
-
+hr {
+   padding: 20px;
+}
 
 /* Project list (no projects)*/
 
@@ -48,11 +50,18 @@ form ul li.category {
    margin: 15px 0px;
 }
 
+.section-stats h5 {
+   color: purple;
+   margin-right: 5px;
+}
+
 @media(max-width: 992px) {
    .section-stats h1 {
       font-size: calc(16px + 6vw);
    }
 }
+
+
 
 
 
@@ -79,4 +88,7 @@ form ul li.category {
    background-color: #f2f2f2;
 }
 
+.section-expenses .close-icon:hover {
+   cursor: pointer;
+}
 

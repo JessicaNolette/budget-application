@@ -9,7 +9,8 @@ import json
 # Create your views here.
 
 def project_list(request):
-    return render(request, 'budget/project-list.html')
+    project_list = Project.objects.all()
+    return render(request, 'budget/project-list.html', {'project_list': project_list})
 
 def project_detail(request, project_slug):
     # fetch the correct project 
@@ -35,6 +36,14 @@ def project_detail(request, project_slug):
                 amount=amount,
                 category=category
             ).save()
+
+    elif request.method == 'DELETE':
+        id = json.loads(request.body)['id']
+        expense = get_object_or_404(Expense, id=id)
+        expense.delete()
+
+        return HttpResponse('')
+    
     return HttpResponseRedirect(project_slug)
 
 
