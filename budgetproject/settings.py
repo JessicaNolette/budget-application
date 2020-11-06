@@ -27,7 +27,8 @@ SECRET_KEY = '2u_f^upx%c2niyg91x6)w9lgs7m@71z(t1v3b$litbni79n4*v'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'gentle-shore-24547.herokuapp.com'
+    'gentle-shore-24547.herokuapp.com',
+    '127.0.0.1'
 ]
 
 
