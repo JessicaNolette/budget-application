@@ -81,11 +81,16 @@ WSGI_APPLICATION = 'budgetproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd7tejcptt7p7h8',
+        'HOST': 'ec2-54-166-114-48.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'zhtrspxyzhextr',
+        'PASSWORD': 'fe21de5c57d3e0821e70c6eb9e2cdb1247b23526be56b030113439d63f0c96c4'
     }
 }
-
+#Go to Heroku settings and copy the config vars for postgres
+#postgres://zhtrspxyzhextr:fe21de5c57d3e0821e70c6eb9e2cdb1247b23526be56b030113439d63f0c96c4@ec2-54-166-114-48.compute-1.amazonaws.com:5432/d7tejcptt7p7h8
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

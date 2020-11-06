@@ -20,6 +20,7 @@ parso==0.7.0
 pbr==5.5.1
 
 pipenv==2018.11.26
+psycopg2-binary==2.8.6
 sqlparse==0.4.1
 
 virtualenv==20.0.20
